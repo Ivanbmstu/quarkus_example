@@ -1,0 +1,17 @@
+display:
+  mach: 3
+  unit:
+    name: "mph"
+    factor: 2.23694
+custom:
+  data: "hello"
+  sum: 100500
+
+appname: "localApp"
+callResult: ${RESULT:false}
+last: false
+throughClient/mp-rest/url: http://${NESTED:localhost:8081}
+
+quarkus:
+  http:
+    port: 8080
